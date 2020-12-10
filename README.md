@@ -29,7 +29,7 @@ little
 ├        ├── system -- 系统模块 
 ├        └── user -- 用户模块 
 ├── little-security -- 权限控制模块
-├── little-system -- 系统监控（待）
+├── little-monitor -- 系统监控（待）
 └── little-task -- 定时任务（待）
 ```
 
@@ -52,5 +52,5 @@ little
 - 根据数据表，自动生成`CRUD`代码（包括Swagger注释、Controller、Service等）
 - 参数校验与全局异常处理。
 - 基于角色（`RBAC`）的权限管理，以及前端管理界面。
+- Spring Boot 应用监控
 - 定时任务系统（待）
-- Spring Boot 应用监控（待）

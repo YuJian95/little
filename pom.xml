@@ -24,6 +24,7 @@
         <module>little-admin</module>
         <module>little-mobile</module>
         <module>little-task</module>
+        <module>little-monitor</module>
     </modules>
 
     <properties>
@@ -46,7 +47,7 @@
         <fastjson.version>1.2.56</fastjson.version>
         <mybatis-plus.version>3.3.2</mybatis-plus.version>
         <velocity.version>2.0</velocity.version>
-
+        <spring-boot-admin.version>2.1.0</spring-boot-admin.version>
         <!-- 子工程需要导入的包 -->
         <little-common.version>0.0.1-SNAPSHOT</little-common.version>
         <little-mbg.version>0.0.1-SNAPSHOT</little-mbg.version>
@@ -172,6 +173,14 @@
                 <groupId>com.qiniu</groupId>
                 <artifactId>qiniu-java-sdk</artifactId>
                 <version>${qiniu-java-sdk.version}</version>
+            </dependency>
+            <!-- 系统监控 -->
+            <dependency>
+                <groupId>de.codecentric</groupId>
+                <artifactId>spring-boot-admin-dependencies</artifactId>
+                <version>${spring-boot-admin.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>
